@@ -14,9 +14,10 @@ public class Program {
 		Department obj = new Department(1,"Books");
 	
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+
+		System.out.println("=== seller findById:====== ");
 		Seller seller = sellerDao.findById(3);
-		System.out.println(seller);
-		
+		System.out.println(seller);	
 	}
 
 }
